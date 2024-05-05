@@ -15,10 +15,14 @@ module.exports = {
         6: "24px",
       },
       borderRadius: { custom: "10px" },
-      color: {
+      colors: {
         "custom-blue": "#182237",
         "custom-soft": "#b7bac1",
         purple: "#3f3cbb",
+        "custom-bg": "#2e374a",
+        "bg-pending": "#f7cb7375",
+        "bg-done": "#afd6ee75",
+        "bg-cancelled": "#f7737375",
       },
 
       flex: {
