@@ -12,6 +12,7 @@ import {
 } from "react-icons/md";
 import MenuLink from "./menuLink/menuLink";
 import Image from "next/image";
+import Link from "next/link";
 const menuItems = [
   {
     title: "Pages",
@@ -76,8 +77,8 @@ const menuItems = [
 ];
 const Sidebar = () => {
   return (
-    <div className="sticky top-2.5">
-      <div className="flex items-center gap-5 mb-5">
+    <div className="sticky top-2.5 bg-light-bg p-2.5 rounded-md min-h-screen">
+      <div className="flex items-center gap-5 mb-5 -light-bg">
         <Image
           className="rounded-full object-cover"
           src="/noavatar.png"
@@ -100,9 +101,11 @@ const Sidebar = () => {
           </li>
         ))}
       </ul>
-      <button className="flex p-5 my-1.25 mx-0 items-center gap-2.5 rounded-custom cursor-pointer hover:bg-[#2e374a] w-full">
-        <MdLogout /> Logout
-      </button>
+      <Link href="/login">
+        <button className="flex p-5 my-1.25 mx-0 items-center gap-2.5 rounded-custom cursor-pointer hover:bg-[#2e374a] w-full">
+          <MdLogout /> Logout
+        </button>
+      </Link>
     </div>
   );
 };

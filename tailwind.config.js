@@ -13,6 +13,20 @@ module.exports = {
         5: "20px",
         1.25: "5px",
         6: "24px",
+        450: "450px",
+        88: "88px",
+        30: "30px",
+        50: "50px",
+        300: "300px",
+      },
+      width: {
+        "1/2": "50%",
+        45: "45%",
+        500: "500px",
+      },
+      height: {
+        "1/2": "50%",
+        500: "500px",
       },
       borderRadius: { custom: "10px" },
       colors: {
@@ -23,6 +37,8 @@ module.exports = {
         "bg-pending": "#f7cb7375",
         "bg-done": "#afd6ee75",
         "bg-cancelled": "#f7737375",
+        "light-bg": "#253352",
+        "bg-button": "#5d57c9",
       },
 
       flex: {

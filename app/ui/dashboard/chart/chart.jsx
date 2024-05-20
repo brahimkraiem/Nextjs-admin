@@ -1,5 +1,15 @@
+"use client";
 import React from "react";
-import { CartesianGrid, Legend, Line, LineChart, ResponsiveContainer, Tooltip, XAxis, YAxis } from "recharts";
+
+import {
+  Legend,
+  Line,
+  LineChart,
+  ResponsiveContainer,
+  Tooltip,
+  XAxis,
+  YAxis,
+} from "recharts";
 
 const data = [
   {
@@ -40,9 +50,9 @@ const data = [
 ];
 const Chart = () => {
   return (
-    <div>
-      <h2>Weekly recap</h2>
-      <ResponsiveContainer width="100%" height="100%">
+    <div className="h-450 bg-custom-bg  p-5 rounded-lg">
+      <h2 className="font-extralight text-custom-soft mb-5">Weekly recap</h2>
+      <ResponsiveContainer width="100%" height="90%">
         <LineChart
           width={500}
           height={300}
@@ -54,10 +64,10 @@ const Chart = () => {
             bottom: 5,
           }}
         >
-          <CartesianGrid strokeDasharray="3 3" />
+    
           <XAxis dataKey="name" />
           <YAxis />
-          <Tooltip />
+          <Tooltip contentStyle={{background:"#"}} />
           <Legend />
           <Line
             type="monotone"
